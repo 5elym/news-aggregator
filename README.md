@@ -1,7 +1,5 @@
 # README
 
-My repository for the BNY Graduate Software Engineering Interview Exercise.
-
 ## Requirements
 
 - Java 25
