@@ -1,7 +1,7 @@
 import type { SearchFilters } from "../hooks/useSearch";
 import type { Article } from "../models/Article";
 
-const BASE_API_URL = "http://localhost:8080";
+const BASE_API_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8080/api";
 
 export const fetchArticlesByQuery = async (query: string, page: number, filters: SearchFilters): Promise<Article[]> => {
   // Convert separate params into one single object
