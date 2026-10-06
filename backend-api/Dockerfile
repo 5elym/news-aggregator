@@ -1,5 +1,5 @@
 # Build the application using Java JDK
-FROM eclipse-temurin:17-jdk-alpine AS build
+FROM eclipse-temurin:25-jdk-alpine AS build
 WORKDIR /app
 
 # Copy the Gradle wrapper and configuration files first
@@ -15,7 +15,7 @@ RUN chmod +x gradlew
 RUN ./gradlew clean bootJar -x test
 
 # Run the application using a lightweight Java JRE
-FROM eclipse-temurin:17-jre-alpine
+FROM eclipse-temurin:25-jre-alpine
 WORKDIR /app
 
 # Copy the compiled executable .jar from Gradle's output folder
