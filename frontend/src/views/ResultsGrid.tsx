@@ -1,6 +1,5 @@
-import { useEffect, useState, type Key } from "react";
+import { type Key } from "react";
 import type { Article } from "../models/Article";
-import { fetchArticlesByQuery } from "../services/SearchService";
 import ArticleCard from "../components/ArticleCard";
 
 // Heroicons

@@ -7,7 +7,6 @@ import { useSearch, type SearchFilters } from "./hooks/useSearch";
 
 export default function App() {
   const [hasSearched, setHasSearched] = useState(false);
-  const [userQuery, setUserQuery] = useState("");
   const searchHook = useSearch();
 
   const handleExecuteSearch = (searchQuery: string, filters: SearchFilters) => {

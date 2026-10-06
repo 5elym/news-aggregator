@@ -17,7 +17,7 @@ export default function SearchHistoryPanel({ history, onSelect, onDelete }: Sear
             <li
               key={item + index}
               className="flex cursor-pointer items-center gap-3 px-4 py-3 text-content transition-colors hover:bg-base"
-              onMouseDown={(e) => {
+              onMouseDown={(_e) => {
                 onSelect(item);
               }}
             >

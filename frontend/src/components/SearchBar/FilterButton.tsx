@@ -14,7 +14,7 @@ export default function FilterButton({ isMenuOpen, showFilters, setShowFilters }
       >
         <button
           type="button"
-          onMouseDown={(e) => {
+          onMouseDown={(_e) => {
             setShowFilters((prev) => !prev);
           }}
           className="flex h-10 w-10 shrink-0 hover:cursor-pointer items-center justify-center rounded-full border border-content-muted/20 bg-base text-content hover:bg-content/5"
