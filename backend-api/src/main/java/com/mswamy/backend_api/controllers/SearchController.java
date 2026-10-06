@@ -16,7 +16,7 @@ import com.mswamy.backend_api.models.ArticleDTO;
 import com.mswamy.backend_api.models.SearchParams;
 import com.mswamy.backend_api.services.NewsProvider;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = { "http://localhost:5173", "https://news-aggregator-810b.onrender.com/" })
 @RestController
 @RequestMapping("/search")
 public class SearchController {
